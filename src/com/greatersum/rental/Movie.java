@@ -1,20 +1,19 @@
 package com.greatersum.rental;
 
-public class Movie {
+class Movie {
     private final String title;
-    private final String code;
+    private final RentalInfo.Classification classification;
 
-    public Movie(String title, String code) {
-
+    Movie(String title, RentalInfo.Classification classification) {
         this.title = title;
-        this.code = code;
+        this.classification = classification;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    public String getCode() {
-        return code;
+    RentalInfo.Classification getClassification() {
+        return classification;
     }
 }
